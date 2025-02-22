@@ -11,7 +11,7 @@ def htop():
     name = "Ayush Kumar Sinha"  
     username = subprocess.getoutput('whoami')
     server_time = datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S')
-    top_output = subprocess.getoutput('top -b -n 1 | head -n 20')  # Get top output
+    top_output = subprocess.getoutput('top -b -n 1 | head -n 20')
 
     response = f"""
     <pre>
